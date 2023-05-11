@@ -9,11 +9,11 @@ export type ExampleModel = {
 
 const EXAMPLES: ExampleModel[] = [
     {
-        text: "What is included in my Northwind Health Plus plan that is not in standard?",
-        value: "What is included in my Northwind Health Plus plan that is not in standard?"
+        text: "Which insecticide manages sap-feeding insect pests?",
+        value: "Which insecticide manages sap-feeding insect pests?"
     },
-    { text: "What happens in a performance review?", value: "What happens in a performance review?" },
-    { text: "What does a Product Manager do?", value: "What does a Product Manager do?" }
+    { text: "My soil is wet & cold with temps less than 60 degrees Fahrenheit, which soybean diseases am I vulnerable to and which insecticide should I use?", value: "My soil is wet & cold with temps less than 60 degrees Fahrenheit, which soybean diseases am I vulnerable to and which insecticide should I use?" },
+    { text: "I see brown lesions on my soybean roots, what should I do?", value: "I see brown lesions on my soybean roots, what should I do??" }
 ];
 
 interface Props {

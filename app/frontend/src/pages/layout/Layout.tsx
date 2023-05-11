@@ -2,6 +2,8 @@ import { Outlet, NavLink, Link } from "react-router-dom";
 
 import github from "../../assets/github.svg";
 
+import CortevaLegal_HorColor_RGB_no_tagline from "../../assets/CortevaLegal_HorColor_RGB_no_tagline.png"
+
 import styles from "./Layout.module.css";
 
 const Layout = () => {
@@ -9,8 +11,11 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
+                    <picture>
+                        <img src={CortevaLegal_HorColor_RGB_no_tagline} alt="Corteva logo" height="40px" className={styles.cortevaLogo}/>
+                    </picture>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+                        <h3 className={styles.headerTitle}>GPT + Enterprise data | Corteva</h3>
                     </Link>
                     <nav>
                         <ul className={styles.headerNavList}>
