@@ -12,7 +12,7 @@ from text import nonewlines
 class RetrieveThenReadApproach(Approach):
 
     template = \
-        "You are an intelligent assistant helping Contoso Inc employees with their healthcare plan questions and employee handbook questions. " + \
+        "You are an intelligent assistant helping Corteva customers answer questions about which Corteva product is appropriate for their use case. " + \
         "Use 'you' to refer to the individual asking the questions even if they ask with 'I'. " + \
         "Answer the following question using only the data provided in the sources below. " + \
         "For tabular information return it as an html table. Do not return markdown format. " + \
@@ -21,16 +21,14 @@ class RetrieveThenReadApproach(Approach):
         """
 
 ###
-Question: 'What is the deductible for the employee plan for a visit to Overlake in Bellevue?'
+Question: 'I see brown lesions on my soybean roots, what should I do?'
 
 Sources:
-info1.txt: deductibles depend on whether you are in-network or out-of-network. In-network deductibles are $500 for employee and $1000 for family. Out-of-network deductibles are $1000 for employee and $2000 for family.
-info2.pdf: Overlake is in-network for the employee plan.
-info3.pdf: Overlake is the name of the area that includes a park and ride near Bellevue.
-info4.pdf: In-network institutions include Overlake, Swedish and others in the region
+DF-C-1019FI-Featuring-Lumisena-Training-Deck-16.pdf: is characterized by a shrunken, reddish-brown lesion on the hypocotyl at or near the soil line. Infection may be superficial, causing no noticeable damage, or may girdle the stem and kill or stunt plants Fusarium C-1019FI offers two modes of action
+DF-Seed-Treatment-3rd-Party-Sell-Sheet-XYZ-0.pdf: A YIELD ADVANTAGE Potential yield benefit in field areas with higher Phytophthora susceptibility using Lumisena fungicide seed treatment. A YIELD ADVANTAGE Potential yield benefit across the farm using Lumisena fungicide seed treatment. LUMISENA FUNGICIDE INDUSTRY - STANDARD SEED TREATMENT SEED TREATMENT *Versus the existing industry-standard seed treatment.
 
 Answer:
-In-network deductibles are $500 for employee and $1000 for family [info1.txt] and Overlake is in-network for the employee plan [info2.pdf][info4.pdf].
+It's possible that your soybean roots are affected by Fusarium or Phytophthora, which are two diseases that can cause brown lesions on roots. If you have Lumisena fungicide seed treatment, it may help protect your soybean plants against these diseases. However, it's best to consult with an agricultural expert or plant pathologist for a proper diagnosis and treatment plan.
 
 ###
 Question: '{q}'?

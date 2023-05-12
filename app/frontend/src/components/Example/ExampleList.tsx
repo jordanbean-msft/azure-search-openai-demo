@@ -13,7 +13,7 @@ const EXAMPLES: ExampleModel[] = [
         value: "Which insecticide manages sap-feeding insect pests?"
     },
     { text: "My soil is wet & cold with temps less than 60 degrees Fahrenheit, which soybean diseases am I vulnerable to and which insecticide should I use?", value: "My soil is wet & cold with temps less than 60 degrees Fahrenheit, which soybean diseases am I vulnerable to and which insecticide should I use?" },
-    { text: "I see brown lesions on my soybean roots, what should I do?", value: "I see brown lesions on my soybean roots, what should I do??" }
+    { text: "I see brown lesions on my soybean roots, what should I do?", value: "I see brown lesions on my soybean roots, what should I do?" }
 ];
 
 interface Props {
